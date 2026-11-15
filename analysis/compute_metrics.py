@@ -2,7 +2,7 @@
 import csv
 from collections import Counter
 
-CSV_PATH = "ai_agent_63_primary_runs.csv"
+CSV_PATH = "data/primary_runs.csv"
 
 with open(CSV_PATH, newline="", encoding="utf-8") as f:
     rows = list(csv.DictReader(f))

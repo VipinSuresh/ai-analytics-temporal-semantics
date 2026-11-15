@@ -37,3 +37,45 @@ Current-department attribution:
 - Operations: 1400
 
 Total expense amount: 2500.
+
+## Trace-audit scope
+
+All 63 primary runs were scored for the behavior relevant to their experiment.
+
+A deeper SQL/execution-trace audit was performed for the 30 Config B and Config C runs in Experiment 1. That audit recorded generated SQL behavior, execution count, execution errors, recovery, and whether the runtime ASOF relationship was used.
+
+Config A and Experiment 2 were not subjected to the same systematic SQL-trace audit across every run.
+
+## ASOF detection
+
+Runtime ASOF usage was determined by reviewing the generated query path in Snowflake observability for the audited Experiment 1 runs.
+
+It was not inferred solely from the semantic-view definition.
+
+For the 12 explicitly historical Experiment 1 runs in each supported configuration:
+
+- Config B: ASOF used in 12/12 runs
+- Config C: ASOF used in 0/12 runs
+
+## Cortex Analyst routing-mode limitation
+
+Snowflake Cortex Analyst can route between semantic SQL and standard SQL depending on query generation and validation behavior.
+
+This experiment did not separately classify semantic-SQL versus standard-SQL routing for every run.
+
+Therefore, the study does not compare routing-mode behavior between Config B and Config C.
+
+## Fresh-thread replacements
+
+During initial Config C collection, two question pairs shared conversation threads:
+
+- Q1 and Q2 in thread 312067716
+- two Q4 runs in thread 312067744
+
+Those four observations were removed from the primary dataset and replaced with fresh-thread runs before final analysis.
+
+The replacements did not change any analytical outcome.
+
+One replacement did change the execution-path statistics by encountering SQL execution errors before recovery.
+
+The superseded observations and additional validation reruns are retained in `data/non_primary_runs.csv` for auditability.

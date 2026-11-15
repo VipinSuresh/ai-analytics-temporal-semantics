@@ -1,0 +1,9 @@
+observation_id,config,experiment,question,thread_id,status,reason_excluded,final_answer_status,notes
+A-E1-Q2-extra,A,Experiment 1,Q2,,Supplemental,Extra fourth Q2 run outside balanced 3-run primary design,Correct qualified proxy,"Returned current-state Finance proxy; retained for audit only"
+C-E1-Q1-old,C,Experiment 1,Q1,312067716,Superseded,Shared conversation thread with Q2,Correct,"Original shared-thread observation replaced by fresh-thread run"
+C-E1-Q2-old,C,Experiment 1,Q2,312067716,Superseded,Shared conversation thread with Q1,Correct,"Original shared-thread observation replaced by fresh-thread run"
+C-E1-Q4-old-1,C,Experiment 1,Q4,312067744,Superseded,Shared conversation thread with another Q4 run,Correct,"Original shared-thread observation replaced by fresh-thread run"
+C-E1-Q4-old-2,C,Experiment 1,Q4,312067744,Superseded,Shared conversation thread with another Q4 run,Correct,"Original shared-thread observation replaced by fresh-thread run"
+C-E1-Q1-validation,C,Experiment 1,Q1,79889301801,Validation,Additional rerun after primary replacement was already frozen,Correct,"Narrative correct; visible rendered table omitted Sales row"
+C-E1-Q4-validation-1,C,Experiment 1,Q4,79889301805,Validation,Additional rerun after primary replacement was already frozen,Correct,"Narrative correct; visible rendered table omitted Employee 103 rows"
+C-E1-Q4-validation-2,C,Experiment 1,Q4,79889301809,Validation,Additional rerun after primary replacement was already frozen,Correct,"Narrative correct; visible rendered table omitted Employee 103 rows"
