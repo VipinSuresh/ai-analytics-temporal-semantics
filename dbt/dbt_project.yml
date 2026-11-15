@@ -1,0 +1,13 @@
+name: 'ai_analytics_temporal_semantics'
+version: '1.0.0'
+config-version: 2
+
+profile: 'ai_analytics_temporal_semantics'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+models:
+  ai_analytics_temporal_semantics:
+    marts:
+      +materialized: table

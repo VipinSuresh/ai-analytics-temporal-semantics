@@ -1,0 +1,13 @@
+ai_analytics_temporal_semantics:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "<your_account_identifier>"
+      user: "<your_username>"
+      authenticator: "<your_authenticator>"
+      role: "<your_role>"
+      warehouse: "COMPUTE_WH"
+      database: "AI_DATA_CORRECTNESS"
+      schema: "EXPERIMENT"
+      threads: 4

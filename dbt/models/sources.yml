@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: experiment
+    database: AI_DATA_CORRECTNESS
+    schema: EXPERIMENT
+
+    tables:
+      - name: expense_fact
+        identifier: EXPENSE_FACT
+
+      - name: employee_dim_scd2
+        identifier: EMPLOYEE_DIM_SCD2

@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: fct_expenses_enriched
+    description: >
+      Expense-level analytical model with both the employee department
+      at the time the expense was incurred and the employee's current
+      department resolved upstream.
+
+    columns:
+      - name: expense_id
+        description: Unique expense identifier.
+        data_tests:
+          - not_null
+          - unique
+
+      - name: employee_id
+        description: Employee identifier.
+        data_tests:
+          - not_null
+
+      - name: expense_date
+        description: Date the expense was incurred.
+        data_tests:
+          - not_null
+
+      - name: expense_amount
+        description: Expense amount.
+        data_tests:
+          - not_null
+
+      - name: department_at_expense
+        description: Employee department effective on the expense date.
+        data_tests:
+          - not_null
+
+      - name: current_department
+        description: Employee's current department.
+        data_tests:
+          - not_null

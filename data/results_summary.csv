@@ -1,0 +1,9 @@
+Finding,Result
+Config A unsupported historical questions safely handled,12/12
+Config B Experiment 1 final answers correct,15/15
+Config C Experiment 1 final answers correct,15/15
+Config B+C Experiment 1 final answers correct,30/30
+Config B+C runs with at least one SQL execution error,5/30
+Experiment 2 ambiguous runs disclosing interpretation,18/18
+Experiment 2 ambiguous runs asking for clarification,0/18
+Config B+C ambiguous runs choosing historical interpretation,12/12
