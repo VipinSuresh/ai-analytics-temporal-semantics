@@ -79,3 +79,19 @@ The replacements did not change any analytical outcome.
 One replacement did change the execution-path statistics by encountering SQL execution errors before recovery.
 
 The superseded observations and additional validation reruns are retained in `data/non_primary_runs.csv` for auditability.
+
+## SQL error classification
+
+The six failed SQL executions in the Config B + Config C Experiment 1 trace analysis were classified manually after reviewing the captured traces.
+
+These categories are post-hoc analytical labels created for this study; they are not Snowflake-defined error classes.
+
+The per-execution classification is published in `data/error_classification.csv`.
+
+Observed categories:
+
+- 4 failures: semantic metric name used against a physical/generated relation
+- 1 failure: wrong logical field for the requested temporal meaning
+- 1 failure: invalid relation/column qualification
+
+All six failed executions were followed by successful recovery within the same run.

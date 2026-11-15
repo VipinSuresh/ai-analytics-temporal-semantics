@@ -1,0 +1,7 @@
+run_id,configuration,question_id,attempt_number,evidence_id,error_summary,classification,self_corrected,article_scope
+E1-B-Q2-R3,B,Q2,1,"THREAD 312067660","Generated SQL referenced department where the historical question required department_at_expense","Wrong logical field for temporal meaning",Yes,"Included in 30-run B+C Experiment 1 trace analysis"
+E1-B-Q5-R2,B,Q5,1,"THREAD 312067700","Generated SQL used SUM(total_expense_amount) against a relation exposing expense_amount","Semantic metric name used against physical/generated relation",Yes,"Included in 30-run B+C Experiment 1 trace analysis"
+E1-B-Q5-R3,B,Q5,1,"THREAD 312067704","Generated SQL used SUM(total_expense_amount) against a relation exposing expense_amount","Semantic metric name used against physical/generated relation",Yes,"Included in 30-run B+C Experiment 1 trace analysis"
+E1-C-Q4-R2,C,Q4,1,"THREAD 79889301797","Generated SQL used an invalid relation/column qualification for expense_amount","Invalid relation/column qualification",Yes,"Included in 30-run B+C Experiment 1 trace analysis"
+E1-C-Q4-R2,C,Q4,2,"THREAD 79889301797","Generated SQL used total_expense_amount where the generated relation exposed expense_amount","Semantic metric name used against physical/generated relation",Yes,"Included in 30-run B+C Experiment 1 trace analysis"
+E1-C-Q5-R2,C,Q5,1,"THREAD 312067760","Generated SQL used SUM(total_expense_amount) against a relation exposing expense_amount","Semantic metric name used against physical/generated relation",Yes,"Included in 30-run B+C Experiment 1 trace analysis"
